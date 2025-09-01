@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController{
+    //customary to add the variables above the methods
+    var currentValue: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -33,6 +35,8 @@ class ViewController: UIViewController{
     
     //Functionality for the slider <- indicates current value of slider
     @IBAction func sliderMoved(slider: UISlider) {
-        print("The value of the slider is now: \(slider.value)")
+        //print("The value of the slider is now: \(slider.value)")
+        //lroundf() <-round decimal number to the nearest whole number then store that rounded-off number in currentValue
+        currentValue = lroundf(slider.value)
     }
 }
