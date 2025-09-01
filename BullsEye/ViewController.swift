@@ -13,8 +13,11 @@ class ViewController: UIViewController{
     }
     //connect button/label to view controller to create action
     //Solid circle establishes relation
+    
+    //Methods start with the word func
     @IBAction func showAlert(){
         //Implementing the actual alert display functionality
+        //Post hitting the "Hit me!" button
         let alert = UIAlertController(
             title: "Hello World",
             message: "This is my first app!",
