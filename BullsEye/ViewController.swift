@@ -30,4 +30,9 @@ class ViewController: UIViewController{
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
+    
+    //Functionality for the slider <- indicates current value of slider
+    @IBAction func sliderMoved(slider: UISlider) {
+        print("The value of the slider is now: \(slider.value)")
+    }
 }
